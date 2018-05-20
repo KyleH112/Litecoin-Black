@@ -1,0 +1,34 @@
+src/*.exe
+src/litecoinblack
+src/litecoinblackd
+src/test_litecoinblack
+.*.swp
+*.*~*
+*.bak
+*.rej
+*.orig
+*.o
+*.patch
+.litecoinblack
+
+# Compilation and Qt preprocessor part
+*.qm
+Makefile
+litecoinblack-qt
+LitecoinBlack-Qt.app
+
+# Unit-tests
+Makefile.test
+litecoinblack-qt_test
+
+# Resources cpp
+qrc_*.cpp
+
+# Qt creator
+*.pro.user
+
+# Mac specific
+.DS_Store
+build
+
+!src/leveldb*/Makefile

@@ -21,7 +21,7 @@ chmod +x litecoinblackd
 
 Attempt to start the daemon using ./litecoinblackd - it will echo stating a config file needs to be created. 
 
-Create a config file. 
+Create a config file. - Remaing in the /src directory
 
 Type nano ~/.litecoinblack/litecoinblack.conf 
 

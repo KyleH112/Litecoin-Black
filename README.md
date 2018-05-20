@@ -11,8 +11,10 @@ sudo apt-get upgrade
 Install the necessary dependencies using the following commands. 
 
 sudo apt-get install build-essential libssl-dev libdb-dev libdb++-dev libboost-all-dev git libssl1.0.0-dbg 
+
 sudo apt-get install libdb-dev libdb++-dev libboost-all-dev libminiupnpc-dev libminiupnpc-dev libevent-dev libcrypto++-dev libgmp3-dev 
 
+NOTE: Litecoin Black Source Code is already compiled and ready to run
 
 After uploading enter the /src directory and execute the following command: 
 chmod +x litecoinblackd 

@@ -6,11 +6,17 @@ Rent a VPS running Ubuntu 14.04 - PREF: Digital Ocean - https://m.do.co/c/4f1ff7
 Set up a swapfile if your system has less than 1.5GB of memory:
 
 fallocate -l 2G /swapfile
+
 chown root:root /swapfile
+
 chmod 0600 /swapfile
+
 sudo bash -c "echo 'vm.swappiness = 10' >> /etc/sysctl.conf"
+
 mkswap /swapfile
+
 swapon /swapfile
+
 
 If fallocate doesn’t work, you can use dd if=/dev/zero of=/swapfile bs=1024 count=1024288 instead.
 
@@ -20,7 +26,8 @@ echo '/swapfile none swap sw 0 0' >> /etc/fstab
 
 Update your VPS using the following commands. 
 
-sudo apt-get update 
+sudo apt-get update
+
 sudo apt-get upgrade 
 
 Install the necessary dependencies using the following commands. 
@@ -30,8 +37,11 @@ sudo apt-get install build-essential libssl-dev libdb-dev libdb++-dev libboost-a
 sudo apt-get install libdb-dev libdb++-dev libboost-all-dev libminiupnpc-dev libminiupnpc-dev libevent-dev libcrypto++-dev libgmp3-dev
 
 cd /Litecoin-Black/src/leveldb
+
 chmod +x build_detect_platform
+
 make clean
+
 make libleveldb.a libmemenv.a
 
 /src Directory - Compile the Source: make -f makefile.unix RELEASE=1

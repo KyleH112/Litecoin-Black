@@ -12,7 +12,9 @@ Install the necessary dependencies using the following commands.
 
 sudo apt-get install build-essential libssl-dev libdb-dev libdb++-dev libboost-all-dev git libssl1.0.0-dbg 
 
-sudo apt-get install libdb-dev libdb++-dev libboost-all-dev libminiupnpc-dev libminiupnpc-dev libevent-dev libcrypto++-dev libgmp3-dev 
+sudo apt-get install libdb-dev libdb++-dev libboost-all-dev libminiupnpc-dev libminiupnpc-dev libevent-dev libcrypto++-dev libgmp3-dev
+
+/src/leveldb Directory - Make sure to sudo chmod +x build_detect_platform before compiling
 
 /src Directory - Compile the Source: make -f makefile.unix RELEASE=1
 

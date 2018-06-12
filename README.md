@@ -14,10 +14,7 @@ sudo apt-get install build-essential libssl-dev libdb-dev libdb++-dev libboost-a
 
 sudo apt-get install libdb-dev libdb++-dev libboost-all-dev libminiupnpc-dev libminiupnpc-dev libevent-dev libcrypto++-dev libgmp3-dev 
 
-NOTE: Litecoin Black Source Code is already compiled and ready to run
-
-After uploading enter the /src directory and execute the following command: 
-chmod +x litecoinblackd 
+/src Directory - Compile the Source: make -f makefile.unix RELEASE=1
 
 Attempt to start the daemon using ./litecoinblackd - it will echo stating a config file needs to be created. 
 
